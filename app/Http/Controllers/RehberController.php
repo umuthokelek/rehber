@@ -87,7 +87,7 @@ class RehberController extends Controller
         $rehber->numara=$request->get('numara');
         $rehber->eposta=$request->get('eposta');
         $rehber->save();
-        return redirect('rehbers');
+        return redirect('rehbers')->with('success','Kişi güncellendi');
         //
     }
 
