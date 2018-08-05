@@ -35,6 +35,14 @@ class RehberController extends Controller
      */
     public function store(Request $request)
     {
+        $rehber= new \App\Rehber;
+        $rehber->ad=$request->get('ad');
+        $rehber->soyad=$request->get('soyad');
+        $rehber->numara=$request->get('numara');
+        $rehber->eposta=$request->get('eposta');
+        $rehber->save();
+        
+        return redirect('rehbers')->with('success', 'Kişi eklendi');
         //
     }
 
