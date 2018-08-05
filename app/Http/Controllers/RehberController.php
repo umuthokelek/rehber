@@ -84,7 +84,7 @@ class RehberController extends Controller
         $rehber= \App\Rehber::find($id);
         $rehber->ad=$request->get('ad');
         $rehber->soyad=$request->get('soyad');
-        $rehber->telefon=$request->get('telefon');
+        $rehber->numara=$request->get('numara');
         $rehber->eposta=$request->get('eposta');
         $rehber->save();
         return redirect('rehbers');
