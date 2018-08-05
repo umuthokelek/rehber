@@ -67,6 +67,8 @@ class RehberController extends Controller
      */
     public function edit($id)
     {
+        $rehber = \App\Rehber::find($id);
+        return view('edit',compact('rehber','id'));
         //
     }
 
