@@ -13,6 +13,8 @@ class RehberController extends Controller
      */
     public function index()
     {
+        $rehbers=\App\Rehber::all();
+        return view('index',compact('rehbers'));
         //
     }
 
