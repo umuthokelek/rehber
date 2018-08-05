@@ -23,14 +23,14 @@
         <div class="row">
           <div class="col-md-4"></div>
           <div class="form-group col-md-4">
-            <label for="Ad">Ad:</label>
-            <input type="text" class="form-control" name="ad">
+            <label for="Soyad">Soyad:</label>
+            <input type="text" class="form-control" name="soyad">
           </div>
         </div>
         <div class="row">
           <div class="col-md-4"></div>
             <div class="form-group col-md-4">
-              <label for="Numara">Telefon numaraso:</label>
+              <label for="Numara">Telefon numarası:</label>
               <input type="text" class="form-control" name="numara">
             </div>
           </div>
