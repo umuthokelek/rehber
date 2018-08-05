@@ -34,7 +34,7 @@
         <td>{{$rehber['numara']}}</td>
         <td>{{$rehber['eposta']}}</td>
         
-        <td><a href="{{action('RehberController@edit', $rehber['id'])}}" class="btn btn-warning">Düzenle</a></td>
+        <td><a href="{{action('RehberController@edit', $rehber['id'])}}" class="btn btn-primary">Düzenle</a></td>
         <td>
           <form action="{{action('RehberController@destroy', $rehber['id'])}}" method="post">
             @csrf
