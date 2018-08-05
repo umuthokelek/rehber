@@ -101,7 +101,7 @@ class RehberController extends Controller
     {
         $rehber = \App\Rehber::find($id);
         $rehber->delete();
-        return redirect('rehber')->with('success','Kişi silindi');
+        return redirect('rehbers')->with('success','Kişi silindi');
         //
     }
 }
