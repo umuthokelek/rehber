@@ -81,6 +81,13 @@ class RehberController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $rehber= \App\Rehber::find($id);
+        $rehber->ad=$request->get('ad');
+        $rehber->soyad=$request->get('soyad');
+        $rehber->telefon=$request->get('telefon');
+        $rehber->eposta=$request->get('eposta');
+        $rehber->save();
+        return redirect('rehbers');
         //
     }
 
