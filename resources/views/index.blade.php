@@ -46,6 +46,8 @@
       @endforeach
     </tbody>
   </table>
+
+   <a href="{{action('RehberController@create')}}" class="btn btn-success">Yeni Kişi</a>
   </div>
   </body>
 </html>
