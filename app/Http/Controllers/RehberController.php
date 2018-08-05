@@ -99,6 +99,9 @@ class RehberController extends Controller
      */
     public function destroy($id)
     {
+        $rehber = \App\Rehber::find($id);
+        $rehber->delete();
+        return redirect('rehber')->with('success','Kişi silindi');
         //
     }
 }
