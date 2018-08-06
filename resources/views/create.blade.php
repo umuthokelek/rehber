@@ -11,7 +11,7 @@
   <body>
     <div class="container">
       <h2>Telefon Rehberi</h2><br/>
-      <form method="post" action="{{url('rehbers')}}" enctype="multipart/form-data">
+      <form method="post" action="{{url('home')}}" enctype="multipart/form-data">
         @csrf
         <div class="row">
           <div class="col-md-4"></div>
