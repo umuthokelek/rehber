@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Telefon Rehberi</title>
+    <title>Rehber</title>
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">  
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>  
@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="container">
-      <h2>Telefon Rehberi</h2><br/>
+      <h2>Yeni Kişi</h2><br/>
       <form method="post" action="{{url('home')}}" enctype="multipart/form-data">
         @csrf
         <div class="row">
