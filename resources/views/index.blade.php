@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <!DOCTYPE html>
 <html>
   <head>
@@ -26,7 +29,7 @@
     </thead>
     <tbody>
       
-      @foreach($rehbers as $rehber)
+      @foreach($home as $rehber)
       <tr>
         <td>{{$rehber['id']}}</td>
         <td>{{$rehber['ad']}}</td>
@@ -51,3 +54,4 @@
   </div>
   </body>
 </html>
+@endsection
