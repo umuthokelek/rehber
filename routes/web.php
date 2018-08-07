@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('home','RehberController');
+Route::resource('rehber','RehberController');
 
 Auth::routes();
 

@@ -14,7 +14,7 @@
   <body>
     <div class="container">
       <h2>Yeni Kişi</h2><br/>
-      <form method="post" action="{{url('home')}}" enctype="multipart/form-data">
+      <form method="post" action="{{url('rehber')}}" enctype="multipart/form-data">
         @csrf
         <div class="row">
           <div class="col-md-4"></div>
