@@ -13,8 +13,8 @@ class RehberController extends Controller
      */
     public function index()
     {
-        $home=\App\Rehber::all();
-        return view('index',compact('home'));
+        $rehber=\App\Rehber::all();
+        return view('index',compact('rehber'));
         //
     }
 
@@ -44,7 +44,7 @@ class RehberController extends Controller
         $rehber->eposta=$request->get('eposta');
         $rehber->save();
         
-        return redirect('home')->with('success', 'Kişi eklendi');
+        return redirect('rehber')->with('success', 'Kişi eklendi');
         //
     }
 
@@ -87,7 +87,7 @@ class RehberController extends Controller
         $rehber->numara=$request->get('numara');
         $rehber->eposta=$request->get('eposta');
         $rehber->save();
-        return redirect('home')->with('success','Kişi güncellendi');
+        return redirect('rehber')->with('success','Kişi güncellendi');
         //
     }
 
@@ -101,7 +101,7 @@ class RehberController extends Controller
     {
         $rehber = \App\Rehber::find($id);
         $rehber->delete();
-        return redirect('home')->with('success','Kişi silindi');
+        return redirect('rehber')->with('success','Kişi silindi');
         //
     }
 }

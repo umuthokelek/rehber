@@ -29,7 +29,7 @@
     </thead>
     <tbody>
       
-      @foreach($home as $rehber)
+      @foreach($rehber as $rehber)
       <tr>
         <td>{{$rehber['id']}}</td>
         <td>{{$rehber['ad']}}</td>
